@@ -1,5 +1,13 @@
-import bar from './bar';
+import Vue from 'vue'
 
-var nombre = "Mario Alberto";
-
-bar(nombre);
+new Vue({
+	el: '#app',
+	data: {
+		message: "Bienvenido Mario Alberto"
+	},
+	methods: {
+		changeMessage: function () {
+			this.message = "Otro Mensaje";
+		}
+	}
+})
